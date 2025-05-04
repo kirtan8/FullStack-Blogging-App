@@ -86,8 +86,8 @@ resource "aws_security_group" "devops_node_sg" {
   }
 }
 
-resource "aws_eks_cluster" "devopsshack" {
-  name     = "devopsshack-cluster"
+resource "aws_eks_cluster" "devops" {
+  name     = "devops-cluster"
   role_arn = aws_iam_role.devops_cluster_role.arn
 
   vpc_config {
